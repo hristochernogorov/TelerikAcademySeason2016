@@ -8,14 +8,14 @@ This cources includes the most fundamentals concepts of programing language C# i
 **Operators, Expressions and Statements**
 **Console Input / Output **
 **Conditional Statements** -> [if-else] [switch-case]
-**Loops**-> [for] [foreach] [while] [do-while]
+**Loops** -> [for] [foreach] [while] [do-while]
 
 #### 2.C# Advanced C#2
 The cources includes expanding knowledge of previous course. Adding new depth knowledge of C#.The course focuses on more advanced topics such as:
 **Arrays**
 **Methods** 
 **Exception handling** 
-**Classes and Objects**.
+**Classes and Objects**
 
 ####3. Object-oriented programming
 ####4. High Quality Code
