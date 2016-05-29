@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYear", "LeapYear\LeapYear.csproj", "{329043FB-0503-4F9F-938A-3BCA42FAA579}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomNumbers", "RandomNumbers\RandomNumbers.csproj", "{AAB6A3B1-E74C-4E05-B14F-3B3C549CF14E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayOfWeek", "DayOfWeek\DayOfWeek.csproj", "{8631E516-F8D1-4EF4-82F3-F60BF3232454}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleSurfaceBySideAndAltitude", "TriangleSurfaceBySideAndAltitude\TriangleSurfaceBySideAndAltitude.csproj", "{84A6D47A-8A15-4AB4-9666-045CF64C3495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleSurfaceByTreeSides", "TriangleSurfaceByTreeSides\TriangleSurfaceByTreeSides.csproj", "{0DFBCEAE-737D-48B7-92B8-D2851C78D4AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleSurfaceByTwoSidesAndAngle", "TriangleSurfaceByTwoSidesAndAngle\TriangleSurfaceByTwoSidesAndAngle.csproj", "{499448C9-5D26-4703-AA59-7C3F14C85074}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumIntegers", "SumIntegers\SumIntegers.csproj", "{6D7756E9-DE31-4B2F-BEFC-18006D3CE4C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workdays", "Workdays\Workdays.csproj", "{DBC13A19-8DFB-46DF-ADA4-8AABADBEC6C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{329043FB-0503-4F9F-938A-3BCA42FAA579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329043FB-0503-4F9F-938A-3BCA42FAA579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329043FB-0503-4F9F-938A-3BCA42FAA579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329043FB-0503-4F9F-938A-3BCA42FAA579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB6A3B1-E74C-4E05-B14F-3B3C549CF14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB6A3B1-E74C-4E05-B14F-3B3C549CF14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB6A3B1-E74C-4E05-B14F-3B3C549CF14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB6A3B1-E74C-4E05-B14F-3B3C549CF14E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8631E516-F8D1-4EF4-82F3-F60BF3232454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8631E516-F8D1-4EF4-82F3-F60BF3232454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8631E516-F8D1-4EF4-82F3-F60BF3232454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8631E516-F8D1-4EF4-82F3-F60BF3232454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84A6D47A-8A15-4AB4-9666-045CF64C3495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A6D47A-8A15-4AB4-9666-045CF64C3495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84A6D47A-8A15-4AB4-9666-045CF64C3495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84A6D47A-8A15-4AB4-9666-045CF64C3495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFBCEAE-737D-48B7-92B8-D2851C78D4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFBCEAE-737D-48B7-92B8-D2851C78D4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFBCEAE-737D-48B7-92B8-D2851C78D4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFBCEAE-737D-48B7-92B8-D2851C78D4AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{499448C9-5D26-4703-AA59-7C3F14C85074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499448C9-5D26-4703-AA59-7C3F14C85074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499448C9-5D26-4703-AA59-7C3F14C85074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499448C9-5D26-4703-AA59-7C3F14C85074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7756E9-DE31-4B2F-BEFC-18006D3CE4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7756E9-DE31-4B2F-BEFC-18006D3CE4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7756E9-DE31-4B2F-BEFC-18006D3CE4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7756E9-DE31-4B2F-BEFC-18006D3CE4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC13A19-8DFB-46DF-ADA4-8AABADBEC6C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC13A19-8DFB-46DF-ADA4-8AABADBEC6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC13A19-8DFB-46DF-ADA4-8AABADBEC6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC13A19-8DFB-46DF-ADA4-8AABADBEC6C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
