@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using System.Text.RegularExpressions;
     using System.Threading.Tasks;
 
     class ExtractSentences
@@ -15,8 +16,9 @@
 
         public static string GetTextWithKeyword(string keyword, string input)
         {
+            
             var array = new string[input.Length];
-            array = input.Split(new char[] {'.','!','?'});
+            array = input.Split(new char[] {'.','!','?'}, StringSplitOptions.RemoveEmptyEntries);
             
             foreach (var senquence in array)
             {
@@ -40,6 +42,7 @@
             var keyword = Console.ReadLine();
             var input = Console.ReadLine();
             Console.WriteLine(GetTextWithKeyword(keyword, input));
+           
 
         }
     }

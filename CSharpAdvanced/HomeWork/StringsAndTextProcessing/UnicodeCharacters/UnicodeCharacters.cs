@@ -8,24 +8,17 @@
 
     class UnicodeCharacters
     {
-        static string UnicodeString(string text)
-        {
-            return Encoding.UTF8.GetString(Encoding.ASCII.GetBytes(text));
-        }
+
         static void Main()
         {
-           
-            var input = Console.ReadLine().Split().ToArray();
-            var array = new string[input.Length];
 
-            
+            var input = Console.ReadLine();
             for (int i = 0; i < input.Length; i++)
             {
-
-                Console.Write(UnicodeString(input[i]));
+                string escape = "\\u" + ((int)input[i]).ToString("X").PadLeft(4, '0');
+                Console.Write(escape);
             }
             Console.WriteLine();
-
         }
     }
 }

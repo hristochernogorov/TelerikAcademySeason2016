@@ -9,28 +9,33 @@
     class SquareRoot
     {
 
-       public static double squareRoot;
-        static double SquareOfNumber(int number)
+        public static double squareRoot;
+        static double SquareOfNumber(double number)
         {
             squareRoot = Math.Sqrt(number);
             return squareRoot;
         }
         static void Main()
         {
-           
+
             try
             {
-                var number = int.Parse(Console.ReadLine());
+                var number = double.Parse(Console.ReadLine());
+                if (number < 0)
+                {
+                    throw new FormatException();
+                }
                 SquareOfNumber(number);
                 Console.WriteLine("{0:F3}", squareRoot);
-                Console.WriteLine("Good bye");
 
             }
-            catch
+            catch (FormatException)
             {
                 Console.WriteLine("Invalid number");
+            }
+            finally
+            {
                 Console.WriteLine("Good bye");
-
             }
 
         }
