@@ -27,5 +27,10 @@
                 this.displayColor = value;
             }
         }
+        public Display(double displaySize,int displayColor)
+        { 
+            this.DisplaySize = displaySize;
+            this.DisplayColor = displayColor;
+        }
     }
 }

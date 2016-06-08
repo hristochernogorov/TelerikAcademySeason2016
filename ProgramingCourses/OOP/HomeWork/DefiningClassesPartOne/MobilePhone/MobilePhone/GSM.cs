@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace MobilePhone
+﻿namespace MobilePhone
 {
+    using System.Collections.Generic;
+
     public class GSM
     {
         private string model;
@@ -11,25 +11,35 @@ namespace MobilePhone
         private Battery battery;
         private Display display;
 
-        public GSM(string model,string manufacturer)
+        public GSM(string model, string manufacturer)
         {
             this.Model = model;
             this.Manufacturer = manufacturer;
+            if (display == null || Batery == null || Owner == null || Price == null)
+            {
+                this.Display = null;
+                this.Batery = null;
+                this.Owner = null;
+                
+            }
+
 
         }
-        public GSM(decimal price,string owner)
+        public GSM(decimal price, string owner, Battery battery, Display display)
         {
             this.Price = price;
             this.Owner = owner;
+            this.Batery = battery;
+            this.Display = display;
         }
         public string AllInformation()
         {
             var info = new List<string>();
 
 
+
             return info.ToString();
         }
-       
 
         public string Model
         {
@@ -58,7 +68,7 @@ namespace MobilePhone
         {
             get
             {
-                return this.price;      
+                return this.price;
             }
             set
             {
@@ -98,7 +108,7 @@ namespace MobilePhone
                 this.display = value;
             }
         }
-        
+
 
     }
 }
