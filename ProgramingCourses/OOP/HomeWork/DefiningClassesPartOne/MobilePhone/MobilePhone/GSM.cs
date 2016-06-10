@@ -15,7 +15,7 @@
         {
             this.Model = model;
             this.Manufacturer = manufacturer;
-            if (display == null || Batery == null || Owner == null || Price == null)
+            if (display == null || Batery == null || Owner == null || Price.ToString() == null)
             {
                 this.Display = null;
                 this.Batery = null;
@@ -25,12 +25,15 @@
 
 
         }
-        public GSM(decimal price, string owner, Battery battery, Display display)
+        public GSM(decimal price,string model,string manufacturer, string owner, Battery battery, Display display)
         {
             this.Price = price;
+            this.Model = model;
+            this.Manufacturer = manufacturer;
             this.Owner = owner;
             this.Batery = battery;
             this.Display = display;
+            
         }
         public string AllInformation()
         {
@@ -40,6 +43,15 @@
 
             return info.ToString();
         }
+        public void AddDeleteCalls()
+        {
+
+        }
+        public void DeleteCallHistory()
+        {
+
+        }
+
 
         public string Model
         {
