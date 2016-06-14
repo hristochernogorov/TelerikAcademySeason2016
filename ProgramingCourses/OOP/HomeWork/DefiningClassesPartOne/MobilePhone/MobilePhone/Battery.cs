@@ -5,6 +5,12 @@
         public string batteryModel;
         public int idleHours;
         public int talkHours;
+        private BatteryType LiIon;
+
+        public Battery(BatteryType type)
+        {
+            this.LiIon = type;
+        }
 
         public string BatteryModel
         {

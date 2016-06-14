@@ -11,7 +11,7 @@
             newPhone.Owner = "Gosho";
             newPhone.Price = 200.70M;
             newPhone.Display = new Display(4.5,256000);
-            newPhone.Batery = new Battery();
+            newPhone.Batery = new Battery(BatteryType.LiIon);
             
 
 

@@ -4,6 +4,7 @@
     {
         LiIon,
         NiMH,
-        NiCd
+        NiCd,
+        LiPol
     }
 }

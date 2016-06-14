@@ -4,6 +4,14 @@
 
     public class GSM
     {
+        public static GSM IPhone4S = new GSM(
+            "IPhone4S",
+            "Apple",
+            1000,
+            "Pesho",   
+            new Display(4.5,24000000),
+            new Battery(BatteryType.LiIon));
+
         private string model;
         private string manufacturer;
         private decimal price;
@@ -20,12 +28,13 @@
                 this.Display = null;
                 this.Batery = null;
                 this.Owner = null;
-                
+                this.Price = 0.00M;
+
             }
 
 
         }
-        public GSM(decimal price,string model,string manufacturer, string owner, Battery battery, Display display)
+        public GSM(string model, string manufacturer, decimal price, string owner,Display display, Battery battery)
         {
             this.Price = price;
             this.Model = model;
@@ -33,7 +42,7 @@
             this.Owner = owner;
             this.Batery = battery;
             this.Display = display;
-            
+
         }
         public string AllInformation()
         {
@@ -51,6 +60,12 @@
         {
 
         }
+        public decimal CalculatePriceOfCallHistory(decimal callPrice)
+        {
+
+            return callPrice;
+        }
+
 
 
         public string Model
@@ -118,6 +133,17 @@
             set
             {
                 this.display = value;
+            }
+        }
+        public List<Call> CallHistory
+        {
+            get
+            {
+                return this.CallHistory;
+            }
+            set
+            {
+                this.CallHistory = value;
             }
         }
 
