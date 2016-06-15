@@ -1,16 +1,41 @@
 ﻿namespace MobilePhone
 {
+    using System.Text;
+
     public class Battery
     {
-        public string batteryModel;
-        public int idleHours;
-        public int talkHours;
-        private BatteryType LiIon;
+        private string batteryModel;
+        private int idleHours;
+        private int talkHours;
+        private BatteryType typeBattery;
+        private BatteryType liIon;
+        private BatteryType liPol;
 
-        public Battery(BatteryType type)
+        public Battery(BatteryType liIon,int idleHours,int talkHours)
         {
-            this.LiIon = type;
+            this.liIon = liIon;
+            this.IdleHours = idleHours;
+            this.TalkHours = talkHours;
         }
+
+        public Battery(BatteryType liPol)
+        {
+            this.liPol = liPol;
+        }
+
+        public BatteryType TypeBattery
+        {
+            get
+            {
+                return this.typeBattery;
+            }
+            set
+            {
+                typeBattery = value;
+            }
+        }
+            
+
 
         public string BatteryModel
         {
@@ -44,6 +69,22 @@
             {
                 this.talkHours = value;
             }
+        }
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            if (this.BatteryModel == null)
+            {
+                result.Append("No Battery");
+            }
+            else
+            {
+                result.Append(string.Format("Model: {0}", this.BatteryModel));
+                result.Append(string.Format("Battery type: {0}", this.TypeBattery));
+                result.Append(string.Format("Hours Idle: {0}", this.IdleHours));
+                result.Append(string.Format("Hours Talk: {0}", this.TalkHours));
+            }
+            return base.ToString();
         }
 
     }

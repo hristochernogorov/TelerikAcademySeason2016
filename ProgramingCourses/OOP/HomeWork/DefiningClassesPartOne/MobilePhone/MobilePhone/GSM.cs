@@ -1,6 +1,8 @@
 ﻿namespace MobilePhone
 {
+    using System;
     using System.Collections.Generic;
+    using System.Text;
 
     public class GSM
     {
@@ -8,9 +10,9 @@
             "IPhone4S",
             "Apple",
             1000,
-            "Pesho",   
-            new Display(4.5,24000000),
-            new Battery(BatteryType.LiIon));
+            "Pesho",
+            new Display(4.5, 24000000),
+            new Battery(BatteryType.LiPol));
 
         private string model;
         private string manufacturer;
@@ -23,51 +25,26 @@
         {
             this.Model = model;
             this.Manufacturer = manufacturer;
-            if (display == null || Batery == null || Owner == null || Price.ToString() == null)
-            {
-                this.Display = null;
-                this.Batery = null;
-                this.Owner = null;
-                this.Price = 0.00M;
-
-            }
-
-
+           
         }
-        public GSM(string model, string manufacturer, decimal price, string owner,Display display, Battery battery)
+        public GSM(string model, string manufacturer, decimal price) : this(model, manufacturer)
         {
             this.Price = price;
-            this.Model = model;
-            this.Manufacturer = manufacturer;
+        }
+        public GSM(string model, string manufacturer, decimal price, string owner) : this(model,manufacturer,price)
+        {
             this.Owner = owner;
-            this.Batery = battery;
+        }
+         public GSM(string model, string manufacturer,decimal price,string owner, Display display) : this(model,manufacturer,price,owner)
+        {
             this.Display = display;
-
         }
-        public string AllInformation()
+        public GSM(string model, string manufacturer, decimal price,string owner,Display display, Battery battery)
         {
-            var info = new List<string>();
-
-
-
-            return info.ToString();
-        }
-        public void AddDeleteCalls()
-        {
-
-        }
-        public void DeleteCallHistory()
-        {
-
-        }
-        public decimal CalculatePriceOfCallHistory(decimal callPrice)
-        {
-
-            return callPrice;
+            this.Batery = battery;
         }
 
-
-
+ 
         public string Model
         {
             get
@@ -141,12 +118,39 @@
             {
                 return this.CallHistory;
             }
-            set
-            {
-                this.CallHistory = value;
-            }
+           
         }
 
 
+        public void AddDeleteCalls(Call call)
+        {
+            this.CallHistory.Remove(call);
+        }
+        public void DeleteCallHistory()
+        {
+            this.CallHistory.Clear();
+        }
+        public decimal CalculatePriceOfCallHistory(decimal callPrice)
+        {
+            ulong duration = 0;
+            foreach (var call in this.CallHistory)
+            {
+                duration += (ulong)call.CallDuration;
+            }
+            callPrice *= (decimal)(duration / 60); 
+            return callPrice;
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(string.Format("Model: {0}", this.Model));
+            sb.AppendLine(string.Format("Manufacturer: {0}", this.Manufacturer));
+            sb.AppendLine(string.Format("Price: {0}", this.Price));
+            sb.AppendLine(string.Format("Owner: {0}", this.Owner));
+            sb.AppendLine(string.Format("Batery: {0}", this.Batery));
+            sb.AppendLine(string.Format("Display: {0}", this.Display));
+
+            return sb.ToString();
+        }
     }
 }

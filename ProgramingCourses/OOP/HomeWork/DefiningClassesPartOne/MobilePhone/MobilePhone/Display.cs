@@ -2,8 +2,8 @@
 {
     public class Display
     {
-        public double displaySize;
-        public int displayColor;
+        private double displaySize;
+        private int displayColor;
 
         public double DisplaySize
         {
