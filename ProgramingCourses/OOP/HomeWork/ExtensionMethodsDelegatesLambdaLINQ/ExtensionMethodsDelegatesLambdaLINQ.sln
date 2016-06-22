@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder", "StringBuil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerableExtensions", "IEnumerableExtensions\IEnumerableExtensions.csproj", "{6B8D8E76-402B-4A02-BB4E-33C5ECC5F161}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentExpresions", "StudentExpresions\StudentExpresions.csproj", "{515DEF52-10CD-4CF3-969D-C794BE067F4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivisibleBy7And3", "DivisibleBy7And3\DivisibleBy7And3.csproj", "{10D3B589-F571-486D-9EA6-9C08BABA60EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6B8D8E76-402B-4A02-BB4E-33C5ECC5F161}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B8D8E76-402B-4A02-BB4E-33C5ECC5F161}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B8D8E76-402B-4A02-BB4E-33C5ECC5F161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515DEF52-10CD-4CF3-969D-C794BE067F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515DEF52-10CD-4CF3-969D-C794BE067F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515DEF52-10CD-4CF3-969D-C794BE067F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515DEF52-10CD-4CF3-969D-C794BE067F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10D3B589-F571-486D-9EA6-9C08BABA60EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10D3B589-F571-486D-9EA6-9C08BABA60EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10D3B589-F571-486D-9EA6-9C08BABA60EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10D3B589-F571-486D-9EA6-9C08BABA60EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
