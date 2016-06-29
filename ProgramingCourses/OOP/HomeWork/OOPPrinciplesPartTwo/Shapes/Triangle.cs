@@ -1,13 +1,15 @@
 ﻿namespace Shapes
 {
-    public class Triangle
+    public class Triangle : Shape
     {
-       
-
-        public virtual double SurfaceTriangle(double height,double width)
+        public Triangle(double width, double height)
+            : base(width, height)
         {
-            var surface = (height * width) / 2;
-            return surface;
+        }
+
+        public override double CalculateSurface()
+        {
+            return (this.Width * this.Height) / 2;
         }
     }
 }

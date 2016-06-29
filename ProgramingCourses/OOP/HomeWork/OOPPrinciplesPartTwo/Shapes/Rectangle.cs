@@ -1,11 +1,15 @@
 ﻿namespace Shapes
 {
-    public class Rectangle
+    public class Rectangle : Shape
     {
-        public virtual double SurfaceRectangle(double height, double width)
+        public Rectangle(double width, double height)
+            : base(width, height)
         {
-            var surface = (height * width);
-            return surface;
+        }
+
+        public override double CalculateSurface()
+        {
+            return this.Width * this.Height;
         }
     }
 }
