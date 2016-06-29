@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{40B745EE-9AFA-4F9B-A8E5-91568BF9F34B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccounts", "BankAccounts\BankAccounts.csproj", "{B533E791-91E7-48AA-949B-7C4683C65ADD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystem", "BankAccounts\BankSystem.csproj", "{B533E791-91E7-48AA-949B-7C4683C65ADD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RangeExceptions", "RangeExceptions\RangeExceptions.csproj", "{0C20CEE5-7275-4AAB-8ED3-FE6A85321D99}"
 EndProject
